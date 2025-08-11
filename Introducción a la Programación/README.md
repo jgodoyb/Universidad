@@ -136,7 +136,7 @@ Este repositorio recopila **todo el material trabajado en la asignatura**, inclu
 
 ## 📑 Documentos asociados  
 
-https://github.com/jgodoyb/Universidad/tree/main/Estructura%20de%20Datos%20y%20Algoritmos%20II/docs/practica01
+https://github.com/jgodoyb/Universidad/tree/main/Introducci%C3%B3n%20a%20la%20Programaci%C3%B3n/docs
 
 ---
 
