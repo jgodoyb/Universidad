@@ -1,8 +1,3 @@
-# Práctica 1 – Esquema Divide-and-Conquer  
-**Asignatura:** EDA II – 2º Grado en Ingeniería Informática  
-**Autor(es):** Jorge Godoy Beltrán
-
----
 
 ## 📌 Objetivo  
 Implementar y analizar diferentes versiones de algoritmos para resolver el **problema del par de puntos más cercano** en un conjunto bidimensional, utilizando tanto enfoques **iterativos** como **divide-and-conquer**.  
@@ -45,9 +40,11 @@ Se han desarrollado e implementado **seis algoritmos**:
    - Genera subarrays en tiempo lineal.  
    - Aplica regla de los 7 en la fase de combinación.
 
+
 ---
 
 ## 📑 Documentos asociados  
 
 https://github.com/jgodoyb/Universidad/tree/main/Estrructura%20de%20Datos%20y%20Algoritmos%20II/docs/practica01
 
+---
