@@ -1,3 +1,5 @@
+# Práctica 01 - Controlando el espacio aéreo ✈️
+---
 
 ## 📌 Objetivo  
 Implementar y analizar diferentes versiones de algoritmos para resolver el **problema del par de puntos más cercano** en un conjunto bidimensional, utilizando tanto enfoques **iterativos** como **divide-and-conquer**.  
@@ -45,6 +47,6 @@ Se han desarrollado e implementado **seis algoritmos**:
 
 ## 📑 Documentos asociados  
 
-https://github.com/jgodoyb/Universidad/tree/main/Estrructura%20de%20Datos%20y%20Algoritmos%20II/docs/practica01
+https://github.com/jgodoyb/Universidad/tree/main/Estructura%20de%20Datos%20y%20Algoritmos%20II/docs/practica01
 
 ---
