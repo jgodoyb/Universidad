@@ -1,7 +1,5 @@
 # Introducción a la Programación  
 **Asignatura:** Introducción a la Programación – 1º Grado en Ingeniería Informática  
-**Fecha de finalización:** *2022*  
-
 
 ---
 
