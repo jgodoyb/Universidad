@@ -1,4 +1,4 @@
-# Multiprocesadores
+# 🖥️ Multiprocesadores
 
 Este repositorio contiene el trabajo desarrollado en la asignatura **Multiprocesadores**, donde se estudian y aplican diferentes técnicas de programación paralela y concurrente.  
 El objetivo es resolver un mismo conjunto de problemas con distintas tecnologías, evaluando rendimiento, escalabilidad y complejidad de implementación.
@@ -49,6 +49,25 @@ Permite la ejecución en sistemas con múltiples nodos, aprovechando memoria dis
 - **Paralelismo distribuido:** `MPI`
 - **Herramientas de compilación:** `make`, `gcc`
 - **Scripts de ejecución:** `Run.sh`
+
+---
+
+## 📂 Estructura del repositorio
+Multiprocesdores/
+│
+├── Practica01/ # Versión secuencial
+│ ├── Bandera/
+│ ├── Mandel/
+│ └── Wa-tor/
+│
+├── Practica02/ # Versión con pthreads
+│ ├── Bandera-PTh/
+│ ├── Mandel-PTh/
+│ └── Wa-tor-PTh/
+│
+├── Practica03/ # Versión con MPI
+│ ├── Bandera-MPI/
+│ └── Mandel-MPI/
 
 ---
 
