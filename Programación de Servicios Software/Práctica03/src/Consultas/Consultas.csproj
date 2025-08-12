@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aplicacion\Aplicacion.csproj" />
+    <ProjectReference Include="..\Categoria\Categoria.csproj" />
+    <ProjectReference Include="..\Conexion\Conexion.csproj" />
+    <ProjectReference Include="..\Personal\Personal.csproj" />
+    <ProjectReference Include="..\UserData\UserData.csproj" />
+    <ProjectReference Include="..\UsuarioCategoria\UsuarioCategoria.csproj" />
+    <ProjectReference Include="..\Usuario\Usuario.csproj" />
+    <ProjectReference Include="..\vmCategoriaNombre\vmCategoriaNombre.csproj" />
+    <ProjectReference Include="..\vmNombreCantidad\vmNombreCantidad.csproj" />
+    <ProjectReference Include="..\vmnombre\vmNombre.csproj" />
+  </ItemGroup>
+
+</Project>

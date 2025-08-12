@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>PSS.aci117.Practica_05</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AutentificacionDB.mdf" />
+    <None Remove="AutentificacionDB_log.ldf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="AutentificacionDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AutentificacionDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+</Project>
