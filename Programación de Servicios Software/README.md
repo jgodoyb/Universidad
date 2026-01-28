@@ -1,31 +1,45 @@
-# Programación de Servicios Software
+# 🔷 Programación de Servicios Software (PSS)
 
-Este repositorio contiene las prácticas realizadas en la asignatura **Programación de Servicios Software**, impartida en el marco del Grado en Ingeniería Informática.  
-El objetivo general de la asignatura es proporcionar una visión práctica y avanzada del desarrollo de software utilizando **C#**, **.NET Core** y el entorno de desarrollo **Visual Studio**, aplicando principios de diseño, patrones arquitectónicos y herramientas de control de versiones.
+Desarrollo de aplicaciones modulares en el ecosistema .NET (C#), enfocándose en patrones de diseño, arquitectura de software y gestión de datos.
 
----
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 
-## 📚 Contenidos trabajados en la asignatura
+## 🏗️ Proyectos y Prácticas
 
-A lo largo de las prácticas de esta asignatura se han desarrollado distintos ejercicios en **C#** usando **.NET Core** y **Visual Studio**, enfocados principalmente a:
+El repositorio está dividido en 4 prácticas incrementales, cada una con su propia solución (`.sln`) y pruebas unitarias:
 
-1. **Creación y organización de proyectos**  
-   - Aplicaciones de consola, librerías de clases y proyectos de pruebas unitarias.  
-   - Estructuración en soluciones y manejo básico de Git desde Visual Studio.
+### 1. Fundamentos del Lenguaje (`Práctica01`)
+Exploración de las capacidades de C#:
+* **Interfaces y Genéricos:** Implementación de `ISecuencia` y clases genéricas.
+* **Delegados y Eventos:** Manejo de eventos y comparadores personalizados (`ComparadorPropiedad`).
+* **Vistas:** Separación básica de lógica y presentación (`UsuarioView`).
 
-2. **Interfaces y colecciones**  
-   - Implementación de interfaces como `IEquatable` e `IComparable`.  
-   - Sobrescritura de métodos y operadores.  
-   - Uso de colecciones (`IEnumerable`, `IEnumerator`) e implementación de iteradores personalizados.
+### 2. Lógica de Dominio y POO (`Práctica02`)
+Desarrollo del núcleo de un juego de mesa:
+* **Modelado:** Clases `Tablero`, `Ficha`, `Jugador` y `Juego`.
+* **Algoritmos:** Lógica de movimiento y estado del juego.
+* **Testing:** Pruebas unitarias exhaustivas para validar las reglas del juego.
 
-3. **Pruebas unitarias y TDD básico**  
-   - Creación de tests unitarios para validar funcionalidad.  
-   - Desarrollo de código a partir de casos de prueba existentes.
+### 3. Arquitectura MVVM y Datos (`Práctica03`)
+Introducción al patrón **Model-View-ViewModel** y acceso a datos:
+* **MVVM:** ViewModels como `vmCategoriaNombre` y `vmNombreCantidad` para desacoplar la interfaz de los datos.
+* **Capas:** Separación en carpetas `Usuario`, `Personal`, `Categoria`.
+* **Conexión:** Clases de infraestructura (`Conexion`, `Consultas`) para interactuar con orígenes de datos.
 
-4. **LINQ y programación funcional básica**  
-   - Consultas a datos en memoria con **LinqToObject**.  
-   - Consultas a archivos XML con **LinqToXML**.
+### 4. Persistencia y Seguridad (`Práctica04`)
+Implementación de patrones de diseño para autenticación y almacenamiento flexible:
+* **Abstracción:** Interfaz `IAutentificacion` para definir el contrato de seguridad.
+* **Estrategias de Persistencia:** Implementaciones concretas para guardar datos en:
+    * XML (`AutentificacionXml`).
+    * Archivos de texto (`AutentificacionTextFile`).
+    * Base de datos SQL Server (`AutentificacionSqlServerFile`).
+* **Aplicación de Consola:** `ConsoleAppXML` para demostrar el uso de las librerías.
 
-5. **Acceso a datos**  
-   - Lectura y escritura de archivos de texto y XML usando streams.  
-   - Introducción al acceso a bases de datos con ADO.NET.  
+## 🚀 Ejecución
+Requiere **Visual Studio 2022** o **.NET SDK 6.0+**.
+
+Para ejecutar los tests de una práctica específica:
+```powershell
+cd "Práctica02/tests"
+dotnet test

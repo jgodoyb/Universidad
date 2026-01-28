@@ -1,140 +1,73 @@
-# Introducción a la Programación  
-**Asignatura:** Introducción a la Programación – 1º Grado en Ingeniería Informática  
+# ☕ Introducción a la Programación (IP)
 
----
+Este repositorio contiene la colección completa de laboratorios y ejercicios prácticos de la asignatura **Introducción a la Programación**. El código documenta la evolución desde el pensamiento imperativo básico hasta el diseño de sistemas orientados a objetos, implementado en **Java**.
 
-## 📌 Propósito de la asignatura  
-La asignatura tiene como objetivo introducir los fundamentos de la programación de ordenadores, proporcionando las bases conceptuales y prácticas necesarias para desarrollar programas correctos, eficientes y bien estructurados.  
-Durante el curso se trabajan los conceptos esenciales de algoritmia, estructuras de control, manejo de datos y principios de programación orientada a objetos, utilizando **Java** como lenguaje principal.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Learning Curve](https://img.shields.io/badge/Learning_Curve-Steep-red?style=for-the-badge)
 
----
+## 📚 Mapa del Contenido
 
-## 📄 Descripción general del repositorio  
-Este repositorio recopila **todo el material trabajado en la asignatura**, incluyendo:  
-- Apuntes y enunciados de ejercicios en formato PDF, organizados por sesión.  
-- Código fuente en Java dividido por sesiones, cada una dedicada a un conjunto de conceptos y prácticas específicas.  
-- Ejemplos y programas completos que ilustran cada tema.
+El código fuente se encuentra bajo `src/main/java/ual/ip` y está organizado meticulosamente por sesiones de laboratorio, cubriendo los siguientes tópicos:
 
----
+### 🔹 Bloque 1: Programación Estructurada
 
-## 📚 Contenido por sesiones  
+* **Sesión 01 - Tipos de Datos y E/S Básica**
+    * Manejo de la clase `Math` y entrada por consola.
+    * *Ejercicios clave:* `CalculoIntereses` (aritmética financiera), `ConversorEurosPesetas` (casting y tipos), `EnteroAleatorio`.
 
-### **Sesión 01 – Fundamentos básicos de Java y operaciones simples**  
-**Temas tratados:**  
-- Conceptos iniciales de programación y sintaxis básica en Java.  
-- Declaración de variables y tipos de datos primitivos.  
-- Operaciones aritméticas y conversión de tipos.  
-- Entrada y salida estándar con `Scanner` y `System.out`.  
+* **Sesión 02 - Estructuras de Selección**
+    * Lógica condicional compleja (`if-else`, `switch`, operador ternario).
+    * *Ejercicios clave:*
+        * `FechaCorrecta`: Algoritmo de validación de días/meses/años.
+        * `EcuacionSegundoGrado`: Manejo de discriminantes y raíces.
+        * `TarifaTaxi`: Lógica de negocio con múltiples condiciones.
 
-**Ejercicios destacados:**  
-- `CalculoIntereses.java` – Cálculo de intereses simples.  
-- `Circunferencia.java` – Área y perímetro de una circunferencia.  
-- `ConversorEurosPesetas.java` – Conversión entre monedas.  
-- `DivisionPorCero.java` – Manejo de errores aritméticos.  
-- `EnteroAleatorio.java` – Generación de números aleatorios.  
+* **Sesión 03 - Estructuras de Iteración**
+    * Bucles `for`, `while`, `do-while` y bucles anidados.
+    * *Ejercicios clave:*
+        * `Fibonacci` & `Primo`: Algoritmos matemáticos clásicos.
+        * `Euclides`: Cálculo del Máximo Común Divisor (MCD).
+        * `CuadradoAsteriscos` / `TrianguloRectangulo`: Lógica de dibujo en consola.
 
----
+* **Sesión 04 - Modularidad y Métodos**
+    * Descomposición de problemas en subrutinas estáticas (`static methods`).
+    * *Ejercicios clave:*
+        * `PrintCalendario`: Algoritmo complejo modularizado para imprimir cualquier mes/año.
+        * `SumaSerie` y `Sumatoria`: Abstracción de operaciones matemáticas.
+        * `ValidarFecha`: Reutilización de lógica de validación.
 
-### **Sesión 02 – Estructuras condicionales y validación de datos**  
-**Temas tratados:**  
-- Uso de sentencias condicionales `if` y `switch`.  
-- Comparaciones y operadores lógicos.  
-- Validación de datos introducidos por el usuario.  
-- Problemas de decisión y ramificación múltiple.  
+### 🔹 Bloque 2: Estructuras de Datos Estáticas
 
-**Ejercicios destacados:**  
-- `CambioMonedas.java` – Cálculo de cambio en monedas y billetes.  
-- `DiaSemana.java` – Determinación del día de la semana.  
-- `EcuacionSegundoGrado.java` – Resolución de ecuaciones cuadráticas.  
-- `FechaCorrecta.java` – Verificación de fechas válidas.  
-- `TarifaTaxi.java` – Cálculo de tarifas en base a condiciones.
+* **Sesión 05 - Arrays y Matrices**
+    * Manipulación de vectores y matrices multidimensionales.
+    * *Ejercicios clave:*
+        * `EstadisticasArrays`: Algoritmos de recorrido (Min, Max, Media).
+        * `MatrizMagica`: Verificación de propiedades matemáticas en matrices cuadradas.
+        * `MatricesBinarias`: Manipulación de bits y lógica booleana en grids.
 
----
+### 🔹 Bloque 3: Programación Orientada a Objetos (POO)
 
-### **Sesión 03 – Bucles y control de iteraciones**  
-**Temas tratados:**  
-- Bucles `while`, `for` y `do-while`.  
-- Control mediante variables centinela.  
-- Generación de secuencias y tablas.  
-- Algoritmos clásicos con iteraciones.  
+* **Sesión 06 - Conceptos de Clase y Objeto**
+    * Transición del paradigma imperativo al orientado a objetos. Encapsulamiento básico.
+    * *Clases:* `Reloj` (manejo de tiempo), `Fraccion` (aritmética de objetos), `Circulo`.
+    * *Testing:* Introducción a clases de prueba (`TestReloj`, `TestFraccion`).
 
-**Ejercicios destacados:**  
-- `BucleCentinela.java` – Lectura de datos hasta condición de salida.  
-- `Fibonacci.java` – Cálculo de la serie de Fibonacci.  
-- `Primo.java` – Comprobación de números primos.  
-- `TablaMultiplicar.java` – Tablas de multiplicar.  
-- `TrianguloRectanguloAsteriscos.java` – Dibujo de figuras con bucles.
+* **Sesión 07 - Diseño de Objetos Avanzado**
+    * Constructores, sobrecarga, métodos `toString`, inmutabilidad y privacidad.
+    * *Clases:*
+        * `HoraExacta` vs `Hora12`: Diferentes representaciones internas de un mismo concepto.
+        * `Multimedia` / `Pelicula`: Modelado de entidades del mundo real.
 
----
+* **Sesión 08 - Colecciones de Objetos**
+    * Gestión de Arrays que contienen referencias a objetos.
+    * *Sistema:* `AsignaturaNota` y `Alumno`. Permite gestionar calificaciones, calcular medias y filtrar alumnos aprobados mediante manipulación de objetos dentro de estructuras estáticas.
 
-### **Sesión 04 – Modularidad y problemas numéricos**  
-**Temas tratados:**  
-- Definición de métodos y modularización del código.  
-- Generación y validación de datos numéricos.  
-- Algoritmos de factorización y búsqueda de primos.  
-- Trabajo con fechas y calendarios.  
+## 🛠️ Compilación y Ejecución
 
-**Ejercicios destacados:**  
-- `GenerarPrimos.java` – Algoritmo para obtener números primos.  
-- `DivisoresPrimos.java` – Obtención de divisores primos.  
-- `PrintCalendario.java` – Impresión de un calendario mensual.  
-- `SumaSerie.java` / `Sumatoria.java` – Operaciones sobre series numéricas.  
-- `ValidarFecha.java` – Validación avanzada de fechas.
+El proyecto sigue la estructura de directorios estándar de Java. Puedes compilar cualquier archivo individualmente.
 
----
-
-### **Sesión 05 – Arrays y matrices**  
-**Temas tratados:**  
-- Declaración y uso de arrays unidimensionales.  
-- Recorridos y operaciones sobre vectores.  
-- Introducción a matrices bidimensionales.  
-- Estadísticas y transformaciones de datos.  
-
-**Ejercicios destacados:**  
-- `EntradaSalidaArrays.java` – Lectura y escritura de arrays.  
-- `EstadisticasArrays.java` – Cálculo de medidas estadísticas.  
-- `MatricesBinarias.java` – Operaciones con matrices binarias.  
-- `MatrizMagica.java` – Comprobación de cuadrados mágicos.  
-- `PracticarConArrays.java` – Ejercicios combinados con arrays.
-
----
-
-### **Sesión 06 – Programación orientada a objetos (POO) – Parte I**  
-**Temas tratados:**  
-- Creación de clases y objetos en Java.  
-- Atributos, constructores y métodos.  
-- Encapsulamiento y control de acceso.  
-- Clases de prueba (`Test`) para validar objetos.  
-
-**Ejercicios destacados:**  
-- `Circulo.java` / `TestCirculo.java` – Modelado y prueba de un círculo.  
-- `EcuacionCuadratica.java` / `TestEcuacionCuadratica.java` – Objeto para resolver ecuaciones.  
-- `Fraccion.java` / `TestFraccion.java` – Clase para operar con fracciones.  
-- `Reloj.java` – Simulación de un reloj digital.
-
----
-
-### **Sesión 07 – POO – Parte II y relaciones entre clases**  
-**Temas tratados:**  
-- Relaciones entre clases y composición.  
-- Métodos estáticos y de instancia.  
-- Sobrecarga de métodos y constructores.  
-- Reutilización y refactorización de código.  
-
----
-
-### **Sesión 08 – Repaso general y prácticas integradoras**  
-**Temas tratados:**  
-- Integración de conceptos de control de flujo, arrays y POO.  
-- Desarrollo de pequeños proyectos completos.  
-- Preparación para evaluación final.  
-
-
----
-
-## 📑 Documentos asociados  
-
-https://github.com/jgodoyb/Universidad/tree/main/Introducci%C3%B3n%20a%20la%20Programaci%C3%B3n/docs
-
----
-
+**Ejemplo: Ejecutar el generador de calendarios**
+```bash
+cd src/main/java
+javac ual/ip/sesion04/PrintCalendario.java
+java ual.ip.sesion04.PrintCalendario

@@ -1,85 +1,35 @@
-# 🖥️ Multiprocesadores
+# ⚡ Multiprocesadores y Programación Paralela
 
-Este repositorio contiene el trabajo desarrollado en la asignatura **Multiprocesadores**, donde se estudian y aplican diferentes técnicas de programación paralela y concurrente.  
-El objetivo es resolver un mismo conjunto de problemas con distintas tecnologías, evaluando rendimiento, escalabilidad y complejidad de implementación.
+Desarrollo de aplicaciones de alto rendimiento (HPC) utilizando lenguaje C en entornos Linux. Se exploran diferentes modelos de programación paralela para acelerar cálculos intensivos.
 
----
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![MPI](https://img.shields.io/badge/OpenMPI-High_Performance-blue?style=for-the-badge)
+![Bash](https://img.shields.io/badge/Bash-Scripting-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
-## 📚 Contenido del repositorio
+## ⚙️ Modelos de Programación
 
-El repositorio se organiza en tres prácticas principales.  
-En todas ellas se resuelven los mismos problemas, pero con enfoques de programación diferentes:
+El repositorio cubre tres enfoques para los mismos problemas computacionales:
 
-### 1️⃣ Práctica 01 — **Versión Secuencial**
-Implementación clásica sin paralelismo.  
-Sirve como punto de referencia para medir las mejoras obtenidas con técnicas paralelas.
+| Práctica | Modelo | Tecnologías | Descripción |
+| :--- | :--- | :--- | :--- |
+| **Practica 01** | **Secuencial** | C estándar | Línea base para comparativas de rendimiento (`gmon.out`). |
+| **Practica 02** | **Memoria Compartida** | **Pthreads** (POSIX Threads) | Paralelización mediante hilos ligeros en un solo nodo. |
+| **Practica 03** | **Memoria Distribuida** | **MPI** (Message Passing Interface) | Paralelización mediante procesos comunicados por mensajes. |
 
-- **Ejercicios incluidos:**
-  - `Bandera` → Generación de un patrón tipo bandera.
-  - `Mandel` → Cálculo y representación del conjunto de Mandelbrot.
-  - `Wa-Tor` → Simulación de un ecosistema marino con depredadores y presas.
+## 🧪 Problemas Resueltos
+1.  **Simulación Wa-tor:** Dinámica de poblaciones depredador-presa en un toroide.
+2.  **Conjunto de Mandelbrot:** Generación de fractales matemáticos.
+3.  **Bandera:** Algoritmos de ordenación y procesamiento de matrices.
 
----
+## 🚀 Compilación y Ejecución
 
-### 2️⃣ Práctica 02 — **Programación con pthreads**
-Uso de hilos POSIX para paralelizar el trabajo, distribuyendo las tareas entre múltiples hilos.  
-Se abordan aspectos como la sincronización, comunicación y partición de datos.
+Cada subcarpeta contiene un `makefile` y un script `Run.sh` para automatizar el proceso.
 
-- **Ejercicios incluidos:**
-  - `Bandera-PTh`
-  - `Mandel-PTh`
-  - `Wa-Tor-PTh`
+**Requisitos:** GCC, OpenMPI (`mpicc`, `mpirun`), Pthreads.
 
----
-
-### 3️⃣ Práctica 03 — **Programación con MPI**
-Implementación distribuida usando **Message Passing Interface (MPI)**.  
-Permite la ejecución en sistemas con múltiples nodos, aprovechando memoria distribuida y comunicación por paso de mensajes.
-
-- **Ejercicios incluidos:**
-  - `Bandera-MPI`
-  - `Mandel-MPI`
-
----
-
-## ⚙️ Tecnologías utilizadas
-
-- **Lenguaje:** C
-- **Paralelismo con hilos:** `pthreads`
-- **Paralelismo distribuido:** `MPI`
-- **Herramientas de compilación:** `make`, `gcc`
-- **Scripts de ejecución:** `Run.sh`
-
----
-
-## 📂 Estructura del repositorio
-Multiprocesdores/
-│
-├── Practica01/ # Versión secuencial
-│ ├── Bandera/
-│ ├── Mandel/
-│ └── Wa-tor/
-│
-├── Practica02/ # Versión con pthreads
-│ ├── Bandera-PTh/
-│ ├── Mandel-PTh/
-│ └── Wa-tor-PTh/
-│
-├── Practica03/ # Versión con MPI
-│ ├── Bandera-MPI/
-│ └── Mandel-MPI/
-
----
-
-## 🏆 Objetivo de la asignatura
-
-- Comprender la diferencia entre **programación secuencial, paralela y distribuida**.
-- Aprender a utilizar **pthreads** y **MPI** en C.
-- Evaluar el **rendimiento y escalabilidad** de diferentes enfoques.
-- Desarrollar habilidades en **depuración y optimización** de programas paralelos.
-
----
-
-## 📌 Notas
-
-Cada carpeta de práctica incluye su propio `makefile` y un script `Run.sh` para ejecutar los programas con parámetros predefinidos.
+**Ejemplo de ejecución (MPI):**
+```bash
+cd Multiprocesadores/Practica03/Mandel-MPI
+make clean
+make
+./Run.sh  # Ejecuta mpirun con los parámetros configurados

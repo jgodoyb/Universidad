@@ -1,26 +1,32 @@
-# Estructura de Datos y Algoritmos II
+# ☕ Estructura de Datos y Algoritmos II
 
-Repositorio para la asignatura **Estructura de Datos y Algoritmos II** del Grado en Ingeniería Informática de la Universidad de Almería.
+Continuación avanzada de la ingeniería algorítmica. Este repositorio contiene la implementación de diversos paradigmas de diseño de algoritmos para resolver problemas complejos de optimización.
 
----
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Algorithms](https://img.shields.io/badge/Algorithms-Complexity-red?style=for-the-badge)
 
-## 📖 Sobre la Asignatura
+## 🧠 Paradigmas de Diseño
 
-Este curso se enfoca en el **diseño y desarrollo de algoritmos para resolver problemas complejos**. Se profundiza en las técnicas algorítmicas fundamentales y se realiza un análisis de eficiencia para cada caso de aplicación. Todo el desarrollo práctico se realiza en **Java**, utilizando tecnologías y herramientas actualizadas en el campo de la ingeniería de software.
+Las prácticas están organizadas por el esquema algorítmico utilizado:
 
-El objetivo principal es que el alumno aprenda a seleccionar y aplicar el esquema algorítmico más adecuado para resolver un problema, garantizando la eficiencia y la robustez de la solución desarrollada.
+| Práctica | Paradigma | Problema / Caso de Estudio |
+| :--- | :--- | :--- |
+| **01** | **Divide y Vencerás** | *Control del espacio aéreo*: Problema de los pares de puntos más cercanos (Closest Pair of Points). |
+| **02** | **Algoritmos Voraces (Greedy)** | Optimización de rutas en grafos sobre mapas personalizados (`EDA Land`). |
+| **03** | **Greedy & Prog. Dinámica** | El problema del viajante de comercio (**TSP** - Travelling Salesman Problem). Comparativa de eficiencia. |
+| **04** | **Backtracking & Branch-Bound** | Búsqueda exacta en espacios de estados para rutas óptimas. |
 
----
+## 📂 Estructura de Archivos
+* `src/`: Código fuente Java.
+* `docs/`: Memorias y documentación de las prácticas (PDF/DOCX).
+* `datasets/`: Archivos de texto con datos de prueba (grafos, coordenadas, mapas).
 
-## 📚 Temas Tratados
+## 🚀 Cómo Ejecutar
 
-El temario de la asignatura cubre las técnicas de diseño de algoritmos más importantes:
+Cada práctica cuenta con su propia clase `Main.java` o clases de prueba específicas.
 
-* **Análisis de Algoritmos:** Un repaso de conceptos generales y notaciones asintóticas para medir la eficiencia.
-* **Divide y Vencerás:** Estrategia para resolver problemas dividiéndolos en subproblemas más pequeños.
-* **Algoritmos Voraces (Greedy):** Técnica que toma la decisión óptima a nivel local en cada paso con la esperanza de encontrar la solución óptima global.
-* **Programación Dinámica:** Método para resolver problemas complejos dividiéndolos en subproblemas y guardando sus soluciones para evitar cálculos repetidos.
-* **Vuelta Atrás (Backtracking):** Técnica de búsqueda exhaustiva que construye soluciones de manera incremental y abandona una opción tan pronto como se determina que no puede llevar a una solución válida.
-* **Ramificación y Poda (Branch and Bound):** Un método de optimización para problemas que exploran un espacio de soluciones, descartando sistemáticamente partes del espacio que no contienen la solución óptima.
-
----
+**Ejemplo (Línea de comandos):**
+```bash
+cd "src/main/java/ual/eda2/practica01 - Divide y Vencerás"
+javac Main.java
+java Main
