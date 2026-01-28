@@ -83,4 +83,4 @@ Para ejecutar los proyectos, asegúrate de tener instalado el entorno correspond
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/tu-usuario/universidad.git](https://github.com/tu-usuario/universidad.git)
+   git clone https://github.com/jgodoyb/Universidad.git
